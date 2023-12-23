@@ -15,7 +15,7 @@ const Wrapper = (props: PropsWithChildren<{ isActive?: boolean }>) => {
   return (
     <button
       className={[
-        "size-12 flex justify-center items-center text-2xl",
+        "size-12 flex justify-center items-center text-2xl bg-white/10 rounded-md",
         activeClass,
       ].join(" ")}
     >
