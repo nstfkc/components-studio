@@ -150,7 +150,7 @@ const DirectMessages = () => {
                 height={24}
                 src={dm.image}
                 alt={dm.name}
-                className="rounded-[4px] w-6 h-6 saturate-[0.5]"
+                className="rounded-[4px] saturate-[0.5]"
               />
             </div>
             <div className="flex items-center justify-between w-full">
