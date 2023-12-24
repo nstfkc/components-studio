@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { TbMoodPlus } from "react-icons/tb";
+import { Editor } from "./Editor";
 
 const messages = [
   {
@@ -124,7 +125,7 @@ const messages = [
   },
 ];
 
-const Message = (props: { message: typeof messages[number] }) => {
+const Message = (props: { message: (typeof messages)[number] }) => {
   const { message } = props;
   return (
     <div>
@@ -183,11 +184,9 @@ export const Content = () => {
     <div className="flex flex-col h-full justify-end">
       <div className="h-full overflow-scroll no-scrollbar px-4">
         <Messages />
+        <div className="h-4"></div>
       </div>
-      <div className="h-32 rounded-xl">
-        <div className="h-8"></div>
-        <div className="bg-white/30 h-24 rounded-xl"></div>
-      </div>
+      <Editor />
     </div>
   );
 };
